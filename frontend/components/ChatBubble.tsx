@@ -67,7 +67,7 @@ const ChatBubble = ({
         )}
 
         {/* Tool output */}
-        {relatedToolOutput && (
+        {relatedToolOutput && !message.isUsingTool && (
           <div className="mt-3 pt-3 border-t border-opacity-20 border-gray-300">
             <InteractiveToolOutput
               toolOutput={relatedToolOutput}
